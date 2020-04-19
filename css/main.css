@@ -1,0 +1,45 @@
+body {
+    /* background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1D2228, #9fa8a3, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#1D2228; 
+    margin:0;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.logout:hover{
+    -webkit-transform: scale(1.1);
+}
+
+.footer-style{
+    background-color: #1D2228;
+    color: white;
+}
+
+.body-size{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
