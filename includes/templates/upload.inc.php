@@ -3,8 +3,8 @@
 </head>
 
 <?php 
-    // include('../utilities/image_validation.util.php');
-    // include('../transactions/upload.val.php'); 
+    include('../utilities/image_validation.util.php');
+    include('../transactions/upload.val.php'); 
 ?>
 
 <body class="jumbotron jumbotron-fluid body-size col-lg-4">
