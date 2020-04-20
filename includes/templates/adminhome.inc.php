@@ -33,17 +33,17 @@
     </nav>
 
 
-    <div class="p-0" style="background-color:white; text-align:left;">
+    <div class="p-5" style="background-color:white; text-align:left;">
         <div class="row mx-md-n1">
 
-            <div class="col-lg-3 p-3 m-auto border" style="text-align:center">
+            <div class="col-lg-3 p-3 ml-auto border" style="text-align:center;">
                 <?php  
-                    include '../transactions/sidebar.php';
+                    include '../transactions/user_fetch_data.php';
                     include '../includes/templates/sidebar.inc.php';
                 ?>
             </div>
 
-            <div class="col-lg-8 p-3 m-auto border">
+            <div class="col-lg-8 p-3 h-auto border m-auto">
                 <div class="table-responsive">
                     <form class="form-inline my-2 " action="<?= $_SERVER['PHP_SELF']; ?>">
                         <div class="form-group">
