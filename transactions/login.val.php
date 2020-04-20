@@ -1,6 +1,6 @@
 <?php
-if(isset($_POST['submit'])){
-    session_start();    
+session_start();
+if(isset($_POST['submit'])){   
     $password = $_POST['password'];
     $uname = $_POST['username'];
     
