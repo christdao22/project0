@@ -90,8 +90,8 @@
 
     </div>
 
-    <div class="footer-style card-footer footer-copyright text-center py-3">
+    <footer class="footer-style card-footer footer-copyright text-center">
         © 2020 Copyright: ChristianPDaohog
-    </div>
+    </footer>
 
 </body>
