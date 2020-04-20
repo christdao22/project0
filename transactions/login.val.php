@@ -16,9 +16,11 @@ if(isset($_POST['submit'])){
         $usertype = $result["usertype"];
 
         if($usertype == 'Admin'){ 
+            $_SESSION['directory'] = "admin";
             proceed($userid, $uname, 'admin');
         }
         elseif($usertype == 'Student'){
+            $_SESSION['directory'] = "my";
             proceed($userid, $uname, 'my');
         }
     }

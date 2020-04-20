@@ -41,7 +41,7 @@ include '../transactions/accountvalidate.val.php';
 
             </form>
             <div class="form-group" style=" text-align:center;">
-                <a class="btn w-100" href="../admin/account.php?"
+                <a class="btn w-100" href="../<?php echo $_SESSION['directory']; ?>/account.php?"
                     style="width:150px; background-color:#f77042; color:white; font-weight:bold">Cancel</a>
             </div>
         </div>

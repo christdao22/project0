@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                 if ($passErrors == 0) {
                     $sql = "UPDATE users SET password = '$pass' WHERE userid = '$userid'";
                     mysqli_query($conn, $sql);
-                    header("location: ../admin/account.php?user=".$_SESSION['userid']);
+                    header("location: ../".$_SESSION['directory']."/account.php?user=".$_SESSION['userid']);
                 }
             }
     
@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
             if($unErrors == 0 ){
                 $sql = "UPDATE users SET username = '$uname' WHERE userid = '$userid'";
                 mysqli_query($conn, $sql);
-                header("location: ../admin/account.php?user=".$_SESSION['userid']);
+                header("location: ../".$_SESSION['directory']."/account.php?user=".$_SESSION['userid']);
             }
         }
     }

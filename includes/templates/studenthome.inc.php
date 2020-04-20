@@ -13,10 +13,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="profile.php">Profile</a>
                 </li>
                 <li class="nav-item ">
@@ -44,46 +44,15 @@
                 ?>
             </div>
 
-            <div class="col-lg-8 p-3 h-auto border m-auto">
-                <h6>Personal Information</h6>
-                <table class="table table-striped table-hover table-sm">
-                    <tr>
-                        <td style='width:150px'>Last Name</td>
-                        <td><?php echo $lname;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>First Name</td>
-                        <td><?php echo $fname;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Middle Name</td>
-                        <td><?php echo $mname;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Gender</td>
-                        <td><?php echo $gender;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Date of Birth</td>
-                        <td><?php echo $DOB;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Place of Birth</td>
-                        <td><?php echo $PlaceOfBirth;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Civil Status</td>
-                        <td><?php echo $civilStatus;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Mobile Number</td>
-                        <td><?php echo $contact_Number;?></td>
-                    </tr>
-                    <tr>
-                        <td style='width:150px'>Address</td>
-                        <td><?php echo $address;?></td>
-                    </tr>
-                </table>
+            <div class="col-lg-8 p-3 border ml-auto mr-auto">
+                <h1>Welcome Back!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut aliquid maxime, unde consequatur
+                    quas aspernatur molestiae esse doloribus provident reiciendis nobis, vero facere quam, optio maiores
+                    minima quae? Quibusdam?</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti aliquid debitis voluptatum, eos
+                    odio, adipisci facilis assumenda recusandae consectetur a, molestias dolores? Ex saepe odit maiores
+                    quos incidunt. Eligendi, et?</p>
             </div>
 
         </div>

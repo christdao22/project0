@@ -31,7 +31,7 @@ if (isset($_FILES["imageToUpload"])) {
             $userid = $_SESSION['userid'];
             $sql = "UPDATE users set profilePic = '$destination' where userid = '$userid'";
             mysqli_query($conn, $sql); 
-            header("location: ../admin/account.php?user=".$userid);
+            header("location: ../".$_SESSION['directory']."/account.php?user=".$userid);
         } 
     }
 }

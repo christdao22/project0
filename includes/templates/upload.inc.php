@@ -41,9 +41,8 @@
             </form>
 
             <div class="form-group mb-2" style=" text-align:center;">
-                <a href="<?php if($_SESSION['actionType'] == 0){echo "index.php";}else{echo "../admin/account.php";} ?>" class="btn w-100" style="width:150px; background-color:#1D2228; color:white;">Back</a>
+                <a href="<?php if($_SESSION['actionType'] == 0){echo "index.php";}else{echo "../".$_SESSION['directory']."/account.php";} ?>" class="btn w-100" style="width:150px; background-color:#1D2228; color:white;">Back</a>
             </div>
-            <!-- <a class="btn w-100" href="../" style="width:150px; background-color:#1D2228; color:white;">Cancel</a> -->
 
         </div>
 

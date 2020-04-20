@@ -36,7 +36,7 @@
 
     <div class="card-body con" style="background-color:white; text-align:left;">
         <div class="row mx-md-n1 main">
-            <div class="col-lg-3 p-3 ml-auto border" style="text-align:center;">
+            <div class="col-lg-3 p-3 ml-auto border h-50" style="text-align:center;">
                 <?php  
                     include '../transactions/user_fetch_data.php';
                     include '../includes/templates/sidebar.inc.php';
