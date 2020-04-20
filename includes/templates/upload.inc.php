@@ -1,21 +1,22 @@
 <link rel="stylesheet" href="../css/main.css" type="text/css" />
-<title>Upload Profile Pic</title>
+<title>Account</title>
 </head>
 
 <?php 
-    include('../utilities/image_validation.util.php');
-    include('../transactions/upload.val.php'); 
+    include '../utilities/dbconnect.util.php'; 
+    include '../utilities/image_validation.util.php';
+    include '../transactions/upload.val.php'; 
 ?>
-
+ 
 <body class="jumbotron jumbotron-fluid body-size col-lg-4">
     <div class="container">
         <div class="head p-3">
-            <h4 class="m-0 text-center" style="color:white">Create My Account</h4>
+            <h4 class="m-0 text-center" style="color:white">Upload Profile</h4>
         </div>
 
         <div class="card-body" style="background-color:white">
 
-            <a class="btn btn-secondary" href="form.php?user=<?php echo $_SESSION['username']; ?>" style="float:right; width:90px">Skip</a>
+            <a class="btn btn-secondary" href="form.php?user=<?php echo $_SESSION['username']; ?>" style="float:right; width:90px" <?php if($_SESSION['actionType'] == 1){echo "hidden";} ?>>Skip</a>
             <div class="p-3 jumbotron"
                 style="width:150px; height:160px; margin:40px auto 20px auto;  border-radius: 50%; text-align:center">
                 <i class="fas fa-user" style="color:black; font-size:7em!important;"></i>
@@ -39,15 +40,14 @@
                 </div>
             </form>
 
-
             <div class="form-group mb-2" style=" text-align:center;">
-                <a href="index.php" class="btn w-100" style="width:150px; background-color:#1D2228; color:white;">Back</a>
+                <a href="<?php if($_SESSION['actionType'] == 0){echo "index.php";}else{echo "../admin/account.php";} ?>" class="btn w-100" style="width:150px; background-color:#1D2228; color:white;">Back</a>
             </div>
             <!-- <a class="btn w-100" href="../" style="width:150px; background-color:#1D2228; color:white;">Cancel</a> -->
 
         </div>
 
-        <div class="footer-style card-footer footer-copyright text-center py-3">
+        <div class="footer-style card-footer footer-copyright text-center py-3 mt-0">
             © 2020 Copyright: ChristianPDaohog
         </div>
     </div>

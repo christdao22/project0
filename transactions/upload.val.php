@@ -19,17 +19,19 @@ if (isset($_FILES["imageToUpload"])) {
         $destination = "../uploads/" . basename($name);
         upload($name, $tmp, $destination);
         if($_SESSION['actionType'] == 0){
+            echo "register";
             $_SESSION['profile_pic'] = $name;           
             header("location: form.php?user=".$_SESSION['username']);
         }
         
         if ($_SESSION['actionType'] == 1){
+            global $conn;
             $_SESSION['profile_pic'] = $name;
+            $destination = "uploads/" . basename($name);
             $userid = $_SESSION['userid'];
             $sql = "UPDATE users set profilePic = '$destination' where userid = '$userid'";
             mysqli_query($conn, $sql); 
             header("location: ../admin/account.php?user=".$userid);
-        
         } 
     }
 }

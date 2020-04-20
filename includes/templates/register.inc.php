@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="../css/main.css" type="text/css" />
 <title>Register</title>
 </head>
-
+ 
 <?php 
     include '../utilities/dbconnect.util.php';
     include '../utilities/validation.util.php'; 
-    include '../transactions/register.val.php'; 
+    include '../transactions/accountvalidate.val.php'; 
 ?>
 
 <body class="jumbotron jumbotron-fluid body-size col-lg-4">
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="footer-style card-footer footer-copyright text-center py-3">
+        <div class="footer-style card-footer footer-copyright text-center py-3 mt-0">
             © 2020 Copyright: ChristianPDaohog
         </div>
     </div>

@@ -11,6 +11,7 @@ if(isset($_POST['submit'])){
     if(mysqli_num_rows($row) != 0){
         $_SESSION['userid'] = $userid = $result["userid"];
         $_SESSION['usertype'] = $result["usertype"];
+        $_SESSION['actionType'] = 1;
         $uname = $result["username"];
         $usertype = $result["usertype"];
 

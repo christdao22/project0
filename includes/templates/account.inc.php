@@ -39,7 +39,7 @@
             <div class="row mx-md-n1 main">
                 <!-- <div class="col-lg-3 p-3 ml-auto border" style="text-align:center;">
                     <?php  
-                    // include '../transactions/user_fetch_data.php';
+                    include '../transactions/user_fetch_data.php';
                     // include '../includes/templates/sidebar.inc.php';
                     ?>
                 </div> -->

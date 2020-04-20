@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div class="footer-style card-footer footer-copyright text-center py-3">
+        <div class="footer-style card-footer footer-copyright text-center py-3 mt-0">
             © 2020 Copyright: ChristianPDaohog
         </div>
     </div>

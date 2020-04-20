@@ -15,6 +15,7 @@ $err_array = array(
     "Error: Password not match! *<br>",
     "Error: Password is not valid! *<br>",
     "Error: Please select *<br>",
+    "Error: Your current password was incorrect"
 );
 
 
