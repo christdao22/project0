@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
             $uname = $_SESSION['username']; 
             $pass = $_SESSION['password'];
             $usertype = $_SESSION['usertype'];
-            $destination = "upload/" . basename($_SESSION['profile_pic']);
+            $destination = "uploads/" . basename($_SESSION['profile_pic']);
     
             $sql = "SELECT * from users where username='$uname'";
             $row = mysqli_query($conn, $sql);
