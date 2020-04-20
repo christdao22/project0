@@ -1,6 +1,6 @@
 html,
 body {
-    height: 96% !important;
+    height: 95% !important;
 }
 
 .con {
@@ -59,7 +59,7 @@ h4 {
     background-color: #1D2228;
     color: white;
     position: relative;
-    height: 504px;
-    margin-top: -50px;
+    height: 50px;
+    margin-top: -38px;
     clear: both;
 }
