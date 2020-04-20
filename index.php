@@ -12,9 +12,3 @@ include 'includes/templates/footer.inc.php';
 <!-- Server side -->
 <!-- Supported elements -->
 <!-- Tooltips -->
-
-<!-- $_SESSION['username'] = $uname;
-        $_SESSION['password'] = $pass;
-        $_SESSION['usertype'] = $usertype;
-        $_SESSION['actionType']
-        $_SESSION['profile_pic'] -->

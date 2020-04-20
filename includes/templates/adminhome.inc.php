@@ -3,6 +3,7 @@
 </head>
 
 <?php include '../utilities/dbconnect.util.php'; ?>
+
 <body class="container-fluid wrapper p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -18,7 +19,7 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="profile.php">Profile</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> 
                     <a class="nav-link" href="account.php">Account</a>
                 </li>
 
@@ -33,9 +34,8 @@
     </nav>
 
 
-    <div class="p-5" style="background-color:white; text-align:left;">
-        <div class="row mx-md-n1">
-
+    <div class="card-body con" style="background-color:white; text-align:left;">
+        <div class="row mx-md-n1 main">
             <div class="col-lg-3 p-3 ml-auto border" style="text-align:center;">
                 <?php  
                     include '../transactions/user_fetch_data.php';
@@ -119,9 +119,7 @@
         </div>
 
     </div>
-
-    <div class="footer-style card-footer footer-copyright text-center py-3">
+    <footer class="footer-style card-footer footer-copyright text-center">
         © 2020 Copyright: ChristianPDaohog
-    </div>
-
+    </footer>
 </body>
