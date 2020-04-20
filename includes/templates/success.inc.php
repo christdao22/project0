@@ -11,7 +11,7 @@
 
          <div class="card-body" style="background-color:white; text-align:center">
             <div class="m-5">
-                <i class="far fa-check-circle image_icon" style="color:#00ff00; font-size:10em!important;"></i>
+                <i class="far fa-check-circle image_icon" style="color:#155724; font-size:10em!important;"></i>
             </div>
 
             <div class="alert alert-success" role="alert" style="margin:auto">
