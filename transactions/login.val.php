@@ -2,23 +2,23 @@
 if(isset($_POST['submit'])){
     session_start();    
     $password = $_POST['password'];
-    $user = $_POST['username'];
+    $uname = $_POST['username'];
     
-    $sql = "SELECT * from users where username = '$user' and password = '$password'";
+    $sql = "SELECT * from users where username = '$uname' and password = '$password'";
     $row = mysqli_query($conn, $sql);
     $result = mysqli_fetch_assoc($row);
     
     if(mysqli_num_rows($row) != 0){
         $_SESSION['userid'] = $userid = $result["userid"];
         $_SESSION['usertype'] = $result["usertype"];
-        $user = $result["username"];
+        $uname = $result["username"];
         $usertype = $result["usertype"];
 
         if($usertype == 'Admin'){ 
-            proceed($userid, $user, 'admin');
+            proceed($userid, $uname, 'admin');
         }
         elseif($usertype == 'Student'){
-            proceed($userid, $user, 'my');
+            proceed($userid, $uname, 'my');
         }
     }
     else{
@@ -26,11 +26,11 @@ if(isset($_POST['submit'])){
     }
 }
 
-function proceed($userid, $user, $destination){
+function proceed($userid, $uname, $destination){
     include 'utilities/dbconnect.util.php'; 
     $sql = "UPDATE users set last_login = sysdate() where userid = '$userid'";
     mysqli_query($conn, $sql);
-    header('location:'.$destination.'?user='.$user);
+    header('location:'.$destination.'?user='.$uname);
 }
 
 ?>

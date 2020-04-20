@@ -1,4 +1,13 @@
 <?php
+function validateImage($size= null, $type=null, $name=null, $tmp=null){
+    if (validateImageType($type)){
+        return 2;
+    }
+    elseif (validateImageSize($size)){
+        return 1;
+    }
+}
+// ************************************************************************************
 // validates the image size
 function validateImageSize($pic_size)
 {

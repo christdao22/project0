@@ -13,9 +13,8 @@
                 <label style="display:block; font-size:15px;">Enter your username and password.</label>
 
                 <?php 
-                    // include 'utilities/dbconnect.util.php';
-                    // include 'utilities/dbquery.util.php';
-                    // include 'transactions/login.val.php';
+                    include 'utilities/dbconnect.util.php';
+                    include 'transactions/login.val.php';
                 ?>
 
                 <div class="form-group text-left">

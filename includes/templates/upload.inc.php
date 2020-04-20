@@ -15,27 +15,22 @@
 
         <div class="card-body" style="background-color:white">
 
-            <?php   
-                // if($error != 0 ){
-                //     echo "<div class='alert alert-danger' role='alert'>
-                //     <i class='fas fa-exclamation-circle'></i>".$error_image_array[$error-1]." *</div>";
-                // }
-            ?>
-            <a class="btn btn-secondary" href="#" style="float:right; width:90px">Skip</a>
+            <a class="btn btn-secondary" href="form.php?user=<?php echo $_SESSION['username']; ?>" style="float:right; width:90px">Skip</a>
             <div class="p-3 jumbotron"
                 style="width:150px; height:160px; margin:40px auto 20px auto;  border-radius: 50%; text-align:center">
                 <i class="fas fa-user" style="color:black; font-size:7em!important;"></i>
 
             </div>
+            <?php   
+                if($error != 0 ){
+                    echo "<div class='alert alert-danger' role='alert'>
+                    <i class='fas fa-exclamation-circle'></i>".$error_image_array[$error-1]." *</div>";
+                }
+            ?>
             <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" enctype="multipart/form-data">
-                <!-- <div class="form-group input-group px-2 py-2 rounded-pill bg-white border"
-                    <?php //if($error!=0){echo 'style="border:2px solid red"';} ?>>
+                <div class="form-group input-group px-2 py-2 rounded-pill bg-white border"
+                    <?php if($error!=0){echo 'style="border:2px solid red"';} ?>>
                     <input type="file" class="form-control border-0" name="imageToUpload">
-                </div> -->
-
-                <div class="custom-file mb-3">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
 
                 <div class="form-group">
@@ -46,8 +41,7 @@
 
 
             <div class="form-group mb-2" style=" text-align:center;">
-                <button class="btn w-100" name="skip" type='submit'
-                    style="width:150px; background-color:#1D2228; color:white;">Back</button>
+                <a href="index.php" class="btn w-100" style="width:150px; background-color:#1D2228; color:white;">Back</a>
             </div>
             <!-- <a class="btn w-100" href="../" style="width:150px; background-color:#1D2228; color:white;">Cancel</a> -->
 

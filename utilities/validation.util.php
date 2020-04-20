@@ -233,14 +233,14 @@ function isCorrectLen($str = null)
     return strlen($str) <= 2 ? true : false;
 }
 
-function move($uname, $pass, $usertype, $reg){
-    if($reg){
+function move($uname, $pass, $usertype){
+    if($_SESSION['actionType'] == 0){
         $_SESSION['username'] = $uname;
         $_SESSION['password'] = $pass;
         $_SESSION['usertype'] = $usertype;
         header("location: upload.php?user=" . $uname);
     }
-    if($acc){
+    if($_SESSION['actionType'] == 1){
         header("location: upload.php?user=" . $uname);
     }
-}
+} 
